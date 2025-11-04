@@ -1,5 +1,5 @@
 import React from 'react';
-import navLinks from "../constants";
+import {navLinks} from "../constants/index.js"
 
 
 const Navbar = () => {
@@ -9,9 +9,9 @@ const Navbar = () => {
         <img src="/logo.svg" alt="Apple logo" />
 
         <ul>
-          {navLinks.map(({ label }) => (
+          {navLinks.map(({ label, link }) => (
             <li key={label}>
-              <a href={`#${label.toLowerCase()}`}>{label}</a>
+               <a href={link}>{label}</a>
             </li>
           ))}
         </ul>

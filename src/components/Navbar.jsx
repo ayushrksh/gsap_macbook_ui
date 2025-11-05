@@ -5,7 +5,7 @@ import {navLinks} from "../constants/index.js"
 const Navbar = () => {
   return (
     <header>
-      <nav>
+      <nav className='px-10'>
         <img src="/logo.svg" alt="Apple logo" />
 
         <ul>
